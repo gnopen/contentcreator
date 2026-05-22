@@ -1,0 +1,25 @@
+{
+  "title": "Build Agent QA dengan Claude",
+  "subtitle": "Panduan membangun AI Agent yang bisa menjadi QA Engineer Anda — dari Claude, Skills, MCP, sampai connector tim Anda",
+  "author": "Thomas Cornelius",
+  "chapters": [
+    {
+      "id": "00-intro",
+      "title": "Membangun Agent QA — Apa yang Anda Butuhkan",
+      "theme": "Pengenalan series: kenapa AI agent untuk QA, apa itu Claude (dan kenapa bukan chatbot biasa), tools wajib yang dipakai, dan requirement (knowledge + access + setup) sebelum mulai membangun.",
+      "key_points": [
+        "Kenapa AI Agent untuk QA: manual = bottleneck, LLM generic = halusinasi, agent berkonteks = solusi",
+        "Apa itu Claude (Anthropic) vs ChatGPT/Gemini: dibangun untuk agentic work + skills + MCP",
+        "Tools wajib: Claude Code, MCP servers, Connectors (Notion/Slack/Drive), Skills bundle",
+        "Requirement: knowledge prereqs (5 sub-flow QA), source material (templates), external access (Notion/Slack), tools setup (API key/MCP)",
+        "Roadmap series: chapter berikutnya bedah masing-masing tahapan setup"
+      ],
+      "source_files": [
+        "E:/Super Thomas/README.md",
+        "E:/Super Thomas/ARCHITECTURE.md",
+        "E:/Super Thomas/Thomas-Agents-Suite-Documentation.md",
+        "E:/Super Thomas/QA/skill/SKILL.md"
+      ]
+    }
+  ]
+}

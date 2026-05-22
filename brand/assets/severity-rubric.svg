@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240" width="720" height="240">
+  <rect width="720" height="240" fill="#F5F1E8"/>
+
+  <style>
+    .eyebrow { font: 600 9px Inter, sans-serif; fill: #4A4A4A; letter-spacing: 2.5px; }
+    .title   { font: 800 22px 'Playfair Display', Georgia, serif; fill: #1A1A1A; }
+    .sev     { font: 800 38px 'Playfair Display', Georgia, serif; fill: #1A1A1A; }
+    .label   { font: 700 11px Inter, sans-serif; fill: #1A1A1A; letter-spacing: 2px; }
+    .desc    { font: 400 9px Inter, sans-serif; fill: #4A4A4A; }
+    .light   { fill: #FAF7F0; }
+  </style>
+
+  <text x="20" y="32" class="eyebrow">SEVERITY · ROUTING</text>
+  <text x="20" y="60" class="title">Bug Severity Rubric</text>
+
+  <!-- P0 Ink (paling serius — solid black) -->
+  <g transform="translate(20, 88)">
+    <rect width="160" height="130" fill="#1A1A1A"/>
+    <text x="20" y="58" class="sev light">P0</text>
+    <text x="20" y="80" class="label light">PROD DOWN</text>
+    <text x="20" y="105" class="desc light">Data loss · Login broken</text>
+    <text x="20" y="118" class="desc light">Payment failing</text>
+  </g>
+
+  <!-- P1 Rust -->
+  <g transform="translate(200, 88)">
+    <rect width="160" height="130" fill="#C25A3E"/>
+    <text x="20" y="58" class="sev light">P1</text>
+    <text x="20" y="80" class="label light">CORE BROKEN</text>
+    <text x="20" y="105" class="desc light">No workaround</text>
+    <text x="20" y="118" class="desc light">Search 500, signup gagal</text>
+  </g>
+
+  <!-- P2 Mustard -->
+  <g transform="translate(380, 88)">
+    <rect width="160" height="130" fill="#E8B547"/>
+    <text x="20" y="58" class="sev">P2</text>
+    <text x="20" y="80" class="label">IMPAIRED</text>
+    <text x="20" y="105" class="desc">Ada workaround</text>
+    <text x="20" y="118" class="desc">Sort wrong, typo UI</text>
+  </g>
+
+  <!-- P3 Mist (cosmetic) -->
+  <g transform="translate(560, 88)">
+    <rect width="140" height="130" fill="#E8E4DA"/>
+    <rect x="0" y="0" width="140" height="130" fill="none" stroke="#1A1A1A" stroke-width="1"/>
+    <text x="20" y="58" class="sev">P3</text>
+    <text x="20" y="80" class="label">COSMETIC</text>
+    <text x="20" y="105" class="desc">Pixel align</text>
+    <text x="20" y="118" class="desc">Edge timing</text>
+  </g>
+</svg>

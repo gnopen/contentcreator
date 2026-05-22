@@ -1,0 +1,99 @@
+/*
+ * Journey QA Thomas — Brand Tokens v2 (Editorial)
+ * -----------------------------------------------
+ * Direction: editorial magazine, refined, calm-confident.
+ * Cream paper background + mustard yellow accent + bold serif display.
+ * Inspired by outdoor/explore publication aesthetics.
+ */
+
+:root {
+  /* ============================
+   * PRIMARY PALETTE
+   * Cream sebagai dasar, ink hitam untuk teks utama,
+   * mustard yellow untuk accent (block, eyebrow, CTA).
+   * ============================ */
+  --brand-cream:        #F5F1E8;   /* primary background (paper) */
+  --brand-cream-soft:   #FAF7F0;   /* lighter variant for surfaces */
+  --brand-paper:        #FFFFFF;   /* clean white card / contrast */
+
+  --brand-ink:          #1A1A1A;   /* primary text, headings */
+  --brand-charcoal:     #4A4A4A;   /* secondary text, captions */
+  --brand-stone:        #8B8579;   /* tertiary, dividers */
+  --brand-mist:         #E8E4DA;   /* subtle background variant */
+
+  --brand-mustard:      #E8B547;   /* accent primary (blocks, eyebrow bg) */
+  --brand-mustard-deep: #C99529;   /* hover / pressed state, deep accent */
+  --brand-mustard-soft: #F5DAA0;   /* subtle accent fill */
+
+  /* ============================
+   * SUPPORT (digunakan hemat — accent harus dominan mustard)
+   * ============================ */
+  --brand-rust:         #C25A3E;   /* warning / P1 severity */
+  --brand-moss:         #6B7A4A;   /* success / pass */
+  --brand-clay:         #A4795F;   /* warm earth accent */
+  --brand-slate:        #5C6970;   /* cool neutral, deep info */
+
+  /* ============================
+   * 5 STAGE COLORS (editorial — semua earthy, accent mustard)
+   * ============================ */
+  --stage-1-requirement: var(--brand-clay);     /* Requirement Analysis */
+  --stage-2-design:      var(--brand-slate);    /* Test Design */
+  --stage-3-execution:   var(--brand-mustard);  /* Test Execution (hero) */
+  --stage-4-reporting:   var(--brand-moss);     /* Reporting & Docs */
+  --stage-5-engagement:  var(--brand-rust);     /* Stakeholder Engagement */
+
+  /* ============================
+   * TYPOGRAPHY — editorial split
+   * Display: serif bold UPPERCASE (Playfair Display / Lora / serif fallback)
+   * Body: clean sans-serif (Inter)
+   * Eyebrow: sans-serif UPPERCASE, letter-spacing wide
+   * Mono: untuk code & template
+   * ============================ */
+  --font-display: 'Playfair Display', 'Lora', 'Georgia', 'Cambria', serif;
+  --font-body:    'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  --font-eyebrow: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono:    'JetBrains Mono', 'Consolas', 'Courier New', monospace;
+
+  --weight-display: 800;   /* serif ExtraBold */
+  --weight-bold:    700;
+  --weight-medium:  500;
+  --weight-regular: 400;
+
+  /* Scale */
+  --size-hero:    52pt;   /* big editorial headline */
+  --size-h1:      30pt;
+  --size-h2:      20pt;
+  --size-h3:      14pt;
+  --size-body:    11pt;
+  --size-small:   9pt;
+  --size-eyebrow: 10pt;
+  --tracking-eyebrow: 0.18em;
+
+  /* ============================
+   * SPACING & RADIUS
+   * Lebih lapang dari versi lama — editorial breathing room.
+   * ============================ */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+  --space-2xl: 96px;
+
+  --radius-sm:  2px;
+  --radius-md:  6px;
+  --radius-lg:  12px;
+  /* Editorial brand tidak suka radius besar — keep tight. */
+
+  /* ============================
+   * SHADOWS — sangat hemat (editorial = clean)
+   * ============================ */
+  --shadow-card: 0 1px 3px rgba(26, 26, 26, 0.06);
+  --shadow-paper: 0 4px 16px rgba(26, 26, 26, 0.08);
+
+  /* ============================
+   * MOTIF — topographic contour lines untuk subtle bg
+   * Bisa dipakai sebagai SVG inline background-image (lihat brand-guide).
+   * ============================ */
+  --motif-contour-opacity: 0.06;
+}

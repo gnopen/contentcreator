@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100" width="360" height="100">
+  <!-- Journey QA Thomas — Editorial v2 -->
+  <!-- Mustard square mark + serif wordmark, gaya magazine -->
+
+  <!-- Mark: solid mustard square dengan checkmark putih (refer ke "explore badge") -->
+  <g transform="translate(8, 18)">
+    <rect width="64" height="64" fill="#E8B547"/>
+    <!-- Inner checkmark, simple geometric -->
+    <path d="M18 32 L28 42 L48 22"
+          stroke="#1A1A1A" stroke-width="4"
+          stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+    <!-- Small accent square top-left, decorative editorial accent -->
+    <rect x="-4" y="-4" width="12" height="12" fill="#1A1A1A"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(92, 0)">
+    <!-- Eyebrow (small caps sans, tracking) -->
+    <text x="0" y="26"
+          font-family="Inter, 'Segoe UI', sans-serif"
+          font-size="9" font-weight="600" fill="#4A4A4A"
+          letter-spacing="3.5">QUALITY · GATE · GROWTH</text>
+
+    <!-- Main wordmark serif, two lines -->
+    <text x="0" y="58"
+          font-family="'Playfair Display', Lora, Georgia, serif"
+          font-size="30" font-weight="800" fill="#1A1A1A"
+          letter-spacing="0.5">JOURNEY QA</text>
+    <text x="0" y="88"
+          font-family="'Playfair Display', Lora, Georgia, serif"
+          font-size="22" font-weight="500" font-style="italic"
+          fill="#4A4A4A" letter-spacing="2">thomas</text>
+  </g>
+</svg>

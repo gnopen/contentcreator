@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 280" width="780" height="280">
+  <rect width="780" height="280" fill="#F5F1E8"/>
+
+  <style>
+    .eyebrow { font: 600 9px Inter, sans-serif; fill: #4A4A4A; letter-spacing: 2.5px; }
+    .num     { font: 800 36px 'Playfair Display', Georgia, serif; fill: #1A1A1A; }
+    .label   { font: 700 13px 'Playfair Display', Georgia, serif; fill: #1A1A1A; letter-spacing: 1px; }
+    .sub     { font: 400 9px Inter, sans-serif; fill: #4A4A4A; }
+    .mantra  { font: 400 italic 9px 'Playfair Display', Georgia, serif; fill: #8B8579; }
+  </style>
+
+  <!-- Title -->
+  <text x="40" y="34" class="eyebrow">5 STAGES · QA JOURNEY</text>
+
+  <!-- Connector line — horizontal solid through middles -->
+  <line x1="80" y1="120" x2="700" y2="120" stroke="#1A1A1A" stroke-width="1.5"/>
+
+  <!-- Stage 1: Requirement (Clay) -->
+  <g transform="translate(40, 70)">
+    <rect width="100" height="100" fill="#A4795F"/>
+    <rect x="6" y="6" width="88" height="88" fill="none" stroke="#FAF7F0" stroke-width="1"/>
+    <text x="50" y="62" class="num" text-anchor="middle" fill="#FAF7F0">01</text>
+    <text x="50" y="128" class="label" text-anchor="middle">EXPLORE</text>
+    <text x="50" y="148" class="sub" text-anchor="middle">Requirement</text>
+    <text x="50" y="162" class="sub" text-anchor="middle">Analysis</text>
+    <text x="50" y="190" class="mantra" text-anchor="middle">"baca PRD,</text>
+    <text x="50" y="204" class="mantra" text-anchor="middle">temukan ambiguity"</text>
+  </g>
+
+  <!-- Stage 2: Design (Slate) -->
+  <g transform="translate(180, 70)">
+    <rect width="100" height="100" fill="#5C6970"/>
+    <rect x="6" y="6" width="88" height="88" fill="none" stroke="#FAF7F0" stroke-width="1"/>
+    <text x="50" y="62" class="num" text-anchor="middle" fill="#FAF7F0">02</text>
+    <text x="50" y="128" class="label" text-anchor="middle">DESIGN</text>
+    <text x="50" y="148" class="sub" text-anchor="middle">Test Strategy</text>
+    <text x="50" y="162" class="sub" text-anchor="middle">&amp; Cases</text>
+    <text x="50" y="190" class="mantra" text-anchor="middle">"4 kategori: pos/</text>
+    <text x="50" y="204" class="mantra" text-anchor="middle">neg/edge/data"</text>
+  </g>
+
+  <!-- Stage 3: Execute (Mustard — hero stage) -->
+  <g transform="translate(320, 70)">
+    <rect width="100" height="100" fill="#E8B547"/>
+    <rect x="6" y="6" width="88" height="88" fill="none" stroke="#1A1A1A" stroke-width="1"/>
+    <text x="50" y="62" class="num" text-anchor="middle">03</text>
+    <text x="50" y="128" class="label" text-anchor="middle">EXECUTE</text>
+    <text x="50" y="148" class="sub" text-anchor="middle">Smoke → Func →</text>
+    <text x="50" y="162" class="sub" text-anchor="middle">Explore → Regress</text>
+    <text x="50" y="190" class="mantra" text-anchor="middle">"fail fast,</text>
+    <text x="50" y="204" class="mantra" text-anchor="middle">file as you find"</text>
+  </g>
+
+  <!-- Stage 4: Report (Moss) -->
+  <g transform="translate(460, 70)">
+    <rect width="100" height="100" fill="#6B7A4A"/>
+    <rect x="6" y="6" width="88" height="88" fill="none" stroke="#FAF7F0" stroke-width="1"/>
+    <text x="50" y="62" class="num" text-anchor="middle" fill="#FAF7F0">04</text>
+    <text x="50" y="128" class="label" text-anchor="middle">REPORT</text>
+    <text x="50" y="148" class="sub" text-anchor="middle">UAT · Release Notes</text>
+    <text x="50" y="162" class="sub" text-anchor="middle">· Test Docs</text>
+    <text x="50" y="190" class="mantra" text-anchor="middle">"audit-able,</text>
+    <text x="50" y="204" class="mantra" text-anchor="middle">stakeholder-ready"</text>
+  </g>
+
+  <!-- Stage 5: Engage (Rust) -->
+  <g transform="translate(600, 70)">
+    <rect width="100" height="100" fill="#C25A3E"/>
+    <rect x="6" y="6" width="88" height="88" fill="none" stroke="#FAF7F0" stroke-width="1"/>
+    <text x="50" y="62" class="num" text-anchor="middle" fill="#FAF7F0">05</text>
+    <text x="50" y="128" class="label" text-anchor="middle">ENGAGE</text>
+    <text x="50" y="148" class="sub" text-anchor="middle">Demo · Meeting</text>
+    <text x="50" y="162" class="sub" text-anchor="middle">· UAT Coord</text>
+    <text x="50" y="190" class="mantra" text-anchor="middle">"gerbang, bukan</text>
+    <text x="50" y="204" class="mantra" text-anchor="middle">tukang stempel"</text>
+  </g>
+</svg>

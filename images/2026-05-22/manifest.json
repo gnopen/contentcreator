@@ -1,0 +1,24 @@
+{
+  "date": "2026-05-22",
+  "total": 1,
+  "successful": 0,
+  "failed": 1,
+  "jobs": [
+    {
+      "input": {
+        "name": "social-00-intro-v1",
+        "prompt": "Instagram square post visual for QA topic. Headline concept: 'Mengapa QA penting: bug yang lolos ke prod 10x lebih mahal daripada di staging'. Flat-design illustration, bold geometric shapes, vibrant colors hot pink (#E91E63), cyan (#26C6DA), and yellow (#FFD600) as primary palette, with accent green (#66BB6A) and purple (#7E57C2). Clean white background. Editorial poster style, no text in image, no watermark. Inspired by modern tech publication covers. Strong central focal element, leave space at the bottom for text overlay.",
+        "aspect_ratio": "1:1",
+        "notes": "Variant 1 for Selamat Datang — Apa Itu QA?"
+      },
+      "output": {
+        "name": "social-00-intro-v1",
+        "success": false,
+        "file": null,
+        "model_used": null,
+        "error": "QUOTA: Semua model image gagal (quota/billing): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information o",
+        "elapsed_ms": 1659
+      }
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "title": "Journey QA Thomas",
+  "subtitle": "Panduan Lengkap Menjadi Quality Assurance Engineer — dari Requirement Analysis hingga Automation",
+  "author": "QA Thomas",
+  "chapters": [
+    {
+      "id": "00-intro",
+      "title": "Selamat Datang — Apa Itu QA?",
+      "theme": "Pengenalan peran QA, prime directive, gambaran 5 sub-flow yang akan dibahas. Tujuannya: pembaca paham bahwa QA bukan sekadar 'tester yang klik-klik tombol' tapi quality gate yang menjamin acceptance criteria terpenuhi.",
+      "key_points": [
+        "Mengapa QA penting: bug yang lolos ke prod 10x lebih mahal daripada di staging",
+        "Prime directive: 'Komunikasi untuk mengecek apakah flow sudah sesuai dengan criteria user story'",
+        "5 sub-flow QA: Requirement Analysis, Test Design, Test Execution, Reporting & Docs, Stakeholder Engagement",
+        "Mindset: kalau menyimpang dari acceptance criteria = bug, walau code-nya jalan",
+        "Apa yang akan dipelajari di chapter-chapter selanjutnya"
+      ],
+      "source_files": [
+        "E:/Super Thomas/QA/README.md",
+        "E:/Super Thomas/QA/skill/SKILL.md"
+      ]
+    },
+    {
+      "id": "01-requirement-analysis",
+      "title": "Requirement Analysis — Quality Gate Pertama",
+      "theme": "Cara membaca PRD secara kritis dan memecah user story jadi scenarios siap-test, SEBELUM engineering mulai coding.",
+      "key_points": [
+        "Checklist 8 item review PRD (acceptance criteria Given/When/Then, edge case explicit, dll.)",
+        "Cara komentar di PRD yang konstruktif (contoh kasus: 'handle invalid input gracefully')",
+        "Decomposing user story jadi scenarios: happy path + variation + failure modes",
+        "Contoh nyata: scenario list untuk fitur 'guided tour first login'",
+        "Gate criteria: kapan analisis dianggap selesai sebelum lanjut Test Design"
+      ],
+      "source_files": [
+        "E:/Super Thomas/QA/skill/references/sub-requirement-analysis.md"
+      ]
+    },
+    {
+      "id": "02-test-design",
+      "title": "Test Design — Strategi, Estimasi, dan Test Case",
+      "theme": "Membangun test strategy dengan estimasi waktu dan menulis test case 4 kategori (positive, negative, edge, data preparation).",
+      "key_points": [
+        "Template Test Strategy: scope, approach, environment, entry/exit criteria",
+        "Wajib: Estimasi Waktu (test case authoring + execution + regression + buffer)",
+        "4 kategori test case dengan contoh kode konkret untuk fitur login",
+        "Format penyimpanan test case (Notion task / CSV) dan kolom standar",
+        "Aturan automation candidate: P0/P1 otomatis, P2 kondisional, P3 manual"
+      ],
+      "source_files": [
+        "E:/Super Thomas/QA/skill/references/sub-test-design.md",
+        "E:/Super Thomas/QA/skill/references/test-case-template.md"
+      ]
+    },
+    {
+      "id": "03-test-execution",
+      "title": "Test Execution — Smoke, Functional, Exploratory, Regression",
+      "theme": "Urutan eksekusi yang fail-fast, cara handle setiap jenis testing, dan pelaporan hasilnya.",
+      "key_points": [
+        "Urutan: Smoke -> Functional -> Exploratory -> Regression (dan kenapa urutan ini matter)",
+        "Smoke gagal = STOP, lapor ke #engineering, jangan lanjut",
+        "Exploratory testing: bukan box-ticking, time-box 4-8 jam",
+        "Format Test Execution Report (summary, bug breakdown, recommendation)",
+        "Routing bug: P0/P1 -> #incidents + DM Tech Lead; P2 -> #qa; P3 -> Notion only"
+      ],
+      "source_files": [
+        "E:/Super Thomas/QA/skill/references/sub-test-execution.md"
+      ]
+    },
+    {
+      "id": "04-bug-reporting",
+      "title": "Bug Reporting — Severity, Template, dan Escalation",
+      "theme": "Filing bug yang actionable, severity rubric P0-P3, dan flow eskalasi sesuai severity.",
+      "key_points": [
+        "Severity rubric P0-P3 dengan contoh real (login broken, search 500, sort typo, misaligned pixel)",
+        "Standard fields bug ticket: title, repro, expected vs actual, environment, reproducible",
+        "Kapan TIDAK perlu file bug (feature request, misunderstanding, can't reproduce 2x)",
+        "Otomatisasi routing pakai script qa_report_bug.py",
+        "Anti-pattern: batch filing di akhir cycle vs file as you find"
+      ],
+      "source_files": [
+        "E:/Super Thomas/QA/skill/references/bug-template.md",
+        "E:/Super Thomas/QA/skill/SKILL.md"
+      ]
+    },
+    {
+      "id": "05-reporting-documentation",
+      "title": "Reporting & Documentation — UAT, Release Notes, Knowledge Base",
+      "theme": "4 jenis dokumen QA dan distribusinya: UAT Report, Release Notes, Test Documentation, Test Execution Report.",
+      "key_points": [
+        "UAT Report: untuk stakeholder, harus include sign-off section",
+        "Release Notes user-facing: format New / Fixed / Improved / Known issues",
+        "Test Documentation = knowledge base jangka panjang (env, data, automation, regression)",
+        "Header konvensi: doc type, feature, author, status, last updated, related links",
+        "Distribusi: siapa baca apa, lewat channel mana"
+      ],
+      "source_files": [
+        "E:/Super Thomas/QA/skill/references/sub-reporting-documentation.md",
+        "E:/Super Thomas/QA/skill/references/uat-report-template.md"
+      ]
+    },
+    {
+      "id": "06-stakeholder-engagement",
+      "title": "Stakeholder Engagement — Demo, Meeting, UAT Coordination",
+      "theme": "QA bukan kerja sendirian. Cara demo yang tidak meledak di depan audience, partisipasi meeting yang berbobot, dan koordinasi UAT.",
+      "key_points": [
+        "Demo strategy: pre-recorded + scripted live + backup recording siap di Drive",
+        "7 jenis meeting QA dan kontribusinya (3-5 bullet per meeting, jangan waffle)",
+        "Pre-UAT / During-UAT / Post-UAT checklist",
+        "Handoff ke PM setelah QA cycle selesai (template handoff_to_pm)",
+        "Bad behaviors: approve under pressure, batch-file bugs, skip UAT, demo tanpa rehearsal"
+      ],
+      "source_files": [
+        "E:/Super Thomas/QA/skill/references/sub-stakeholder-engagement.md"
+      ]
+    },
+    {
+      "id": "07-automation-playwright",
+      "title": "Automation Testing dengan Playwright",
+      "theme": "Setup project Playwright, Page Object Model, contoh nyata dari Atmoscheck automation.",
+      "key_points": [
+        "Kenapa Playwright (vs Cypress, Selenium, Katalon)",
+        "Struktur project: pages/, helpers/, data/, api/, tests/",
+        "Page Object Model — contoh untuk login flow",
+        "Data-driven test: contoh upload shapefile dengan banyak fixture",
+        "Run command: smoke vs full suite, parallelization, report HTML"
+      ],
+      "source_files": [
+        "E:/Super Thomas/QA/automation-playwright/README.md",
+        "E:/Super Thomas/QA/README.md"
+      ]
+    },
+    {
+      "id": "08-tools-workflow",
+      "title": "Tools & Workflow — Notion, Slack, Drive, Handoff",
+      "theme": "Ekosistem tool yang dipakai QA Thomas sehari-hari dan cara mengoperasikan handoff antar role.",
+      "key_points": [
+        "Notion: Tasks DB (test docs) + Bugs DB — konvensi label dan owner",
+        "Slack: channel mapping (#engineering, #qa, #incidents, #uat-<feature>)",
+        "Google Drive: penyimpanan video/screenshot evidence dan PDF UAT report",
+        "API/DB connector: setup/teardown data + verifikasi state",
+        "Handoff ke PM/Tech Lead/Marketing: kapan dan bagaimana"
+      ],
+      "source_files": [
+        "E:/Super Thomas/QA/skill/SKILL.md"
+      ]
+    },
+    {
+      "id": "09-penutup",
+      "title": "Penutup — Resources, Templates, dan Next Steps",
+      "theme": "Rekap journey, kumpulan template siap pakai, dan kemana setelah selesai book ini.",
+      "key_points": [
+        "Rekap 5 sub-flow + kapan masing-masing dijalankan",
+        "Daftar template yang sudah dibahas (test case, bug, UAT report, release notes, strategy)",
+        "Self-assessment: 10 pertanyaan untuk cek kesiapan menjalankan QA cycle",
+        "Resources tambahan: buku, blog, komunitas QA Indonesia",
+        "Next step: terapkan ke project nyata dalam 7 hari"
+      ],
+      "source_files": [
+        "E:/Super Thomas/QA/README.md",
+        "E:/Super Thomas/QA/skill/SKILL.md"
+      ]
+    }
+  ]
+}
